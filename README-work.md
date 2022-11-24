@@ -30,43 +30,6 @@ for <English Python::pandas Raku::Reshapers Spanish Russian> -> $t {
    say ToDataQueryWorkflowCode($command, $t, language => 'Portuguese', format => 'code');
 }
 ```
-```
-# ============================================================
-# English
-# ------------------------------------------------------------
-# load the data table: "íris"
-# take elements from 1 to 120
-# group by the columns: Species
-# show dimensions
-# ============================================================
-# Python::pandas
-# ------------------------------------------------------------
-# obj = example_dataset('íris')
-# obj = obj.iloc[1-1:120]
-# obj = obj.groupby(["Species"])
-# print(obj.size())
-# ============================================================
-# Raku::Reshapers
-# ------------------------------------------------------------
-# my $obj = example-dataset('íris') ;
-# $obj = $obj[ (1 - 1) ... (120 - 1 ) ] ;
-# $obj = group-by($obj, "Species") ;
-# say "dimensions: {dimensions($obj)}"
-# ============================================================
-# Spanish
-# ------------------------------------------------------------
-# cargar la tabla: "íris"
-# tomar los elementos de 1 a 120
-# agrupar con columnas: "Species"
-# mostrar dimensiones
-# ============================================================
-# Russian
-# ------------------------------------------------------------
-# загрузить таблицу: "íris"
-# взять элементы с 1 по 120
-# групировать с колонками: Species
-# показать размеры
-```
 
 -------
 

@@ -1,0 +1,60 @@
+use DSL::Shared::Utilities::FuzzyMatching;
+
+# Data query specific phrases
+role DSL::Portuguese::DataQueryWorkflows::Grammar::DataQueryPhrases {
+    # Tokens
+    token arrange-verb { 'arranjar' }
+    token ascending-adjective { 'ascendente' }
+    token association-noun { 'associação' }
+    token broad-adjective { 'wide' }
+    token cast-verb { 'formulário' }
+    token character-noun { 'símbolo' }
+    token combine-verb { 'combinar' }
+    token cross-adjective { 'cruzadas' | 'cruzada' | 'cruzado' | 'cruz' }
+    token cross-verb { 'crossface'  }
+    token descending-adjective { 'descendente' }
+    token distinct-adjective { 'único' | 'único' }
+    token divider-noun { 'divisor' }
+    token duplicate-adjective { 'duplicado' | 'republicado de' }
+    token duplicates-noun { 'duplicado' | 'repito' }
+    token form-noun { 'formulário' }
+    token format-noun { 'formato' }
+    token formula-noun { 'fórmula' }
+    token full-adjective { 'completo' | 'completo' | 'completo' }
+    token glimpse-verb { 'peep' | 'mamilos' }
+    token group-verb { 'grouprai' | 'agrupar' }
+    token inner-adjective { 'interno' | 'interno' | 'a nível interno' }
+    token keep-verb { 'excepto' | 'espera' | 'espera' | 'guarde' }
+    token long-adjective { 'longo' | 'longa' | 'longas' }
+    token longer-adjective { 'mais' \h+ <long-adjective> }
+    token map-verb { 'associado' }
+    token mapping-noun { 'associação' }
+    token melt-verb { 'derreter' }
+    token merge-noun { 'fusão' }
+    token merge-verb { 'descarregar' }
+    token mutate-verb { 'sofrer uma mutação' }
+    token narrow-adjective { 'estreito' | 'estreito' | 'estreito' }
+    token omit-directive { 'saltar para' | 'off' }
+    token only-adverb { 'apenas' }
+    token order-verb { 'encomendado'  }
+    token pivot-verb { 'desenvolver' | 'desenrolar' }
+    token rename-verb { 'renomear' }
+    token safe-adjective { 'seguro' }
+    token safely-adverb { 'claro' }
+    token select-verb { 'escolha' }
+    token semi-adjective { 'metade' }
+    token separator-noun { 'divisor' }
+    token skim-verb { 'revisão' }
+    token skimming-noun { 'ver' }
+    token sort-verb { 'ordenar' | 'encomendado' }
+    token splitter-noun { 'divisor' }
+    token splitting-noun { 'divisão' }
+    token summarise-verb { 'resumir' }
+    token summarize-verb { 'resumir' }
+    token tabulate-verb { 'tab' | 'tabular' }
+    token tabulation-noun { 'tabulação' | 'tabling' }
+    token ungroup-verb { 'desagrupar' }
+    token unique-adjective { 'único' | 'único' }
+    token wide-adjective { 'ampla' }
+    token wider-adjective { 'mais' \h+ 'ampla' }
+}
