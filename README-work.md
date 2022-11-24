@@ -3,7 +3,7 @@
 ## In brief
 
 This Raku package facilitates the specification computational workflows using 
-natural language commands in Bulgarian.
+natural language commands in Portuguese.
 
 Using the Domain Specific Languages (DSLs) executable code is generated for different
 programming languages: Julia, Python, R, Raku, Wolfram Language.
