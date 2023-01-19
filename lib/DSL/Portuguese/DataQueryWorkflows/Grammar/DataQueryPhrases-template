@@ -1,4 +1,4 @@
-use DSL::Shared::Utilities::FuzzyMatching;
+use DSL::Shared::Utilities::DeterminedWordsMatching;
 
 # Data query specific phrases
 role DSL::Portuguese::DataQueryWorkflows::Grammar::DataQueryPhrases {
@@ -15,7 +15,7 @@ role DSL::Portuguese::DataQueryWorkflows::Grammar::DataQueryPhrases {
     token descending-adjective { 'descendente' }
     token distinct-adjective { 'único' | 'único' }
     token divider-noun { 'divisor' }
-    token duplicate-adjective { 'duplicado' | 'republicado de' }
+    token duplicate-adjective { 'duplicado' | 'republicado' \h+ 'de' }
     token duplicates-noun { 'duplicado' | 'repito' }
     token form-noun { 'formulário' }
     token format-noun { 'formato' }
@@ -23,7 +23,7 @@ role DSL::Portuguese::DataQueryWorkflows::Grammar::DataQueryPhrases {
     token full-adjective { 'completo' | 'completo' | 'completo' }
     token glimpse-verb { 'peep' | 'mamilos' }
     token group-verb { 'grouprai' | 'agrupar' }
-    token inner-adjective { 'interno' | 'interno' | 'a nível interno' }
+    token inner-adjective { 'interno' | 'interno' | 'a' \h+ 'nível' \h+ 'interno' }
     token keep-verb { 'excepto' | 'espera' | 'espera' | 'guarde' }
     token long-adjective { 'longo' | 'longa' | 'longas' }
     token longer-adjective { 'mais' \h+ <long-adjective> }
@@ -32,9 +32,9 @@ role DSL::Portuguese::DataQueryWorkflows::Grammar::DataQueryPhrases {
     token melt-verb { 'derreter' }
     token merge-noun { 'fusão' }
     token merge-verb { 'descarregar' }
-    token mutate-verb { 'sofrer uma mutação' }
+    token mutate-verb { 'sofrer' \h+ 'uma' \h+ 'mutação' }
     token narrow-adjective { 'estreito' | 'estreito' | 'estreito' }
-    token omit-directive { 'saltar para' | 'off' }
+    token omit-directive { 'saltar' \h+ 'para' | 'off' }
     token only-adverb { 'apenas' }
     token order-verb { 'encomendado'  }
     token pivot-verb { 'desenvolver' | 'desenrolar' }
